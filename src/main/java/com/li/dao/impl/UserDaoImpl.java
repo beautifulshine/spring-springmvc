@@ -1,12 +1,13 @@
 package com.li.dao.impl;
 
-import com.li.dao.IUser;
 
-public class User implements IUser{
+import com.li.dao.IUserDao;
+
+public class UserDaoImpl implements IUserDao{
 
 	public String get() {
 		
-		//判定是否调用了  
+		//鍒ゅ畾鏄惁璋冪敤浜� 
         System.out.println("------I am springManager----");  
           
         return "I am getMethod";  

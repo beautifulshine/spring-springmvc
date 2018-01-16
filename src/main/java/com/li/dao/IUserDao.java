@@ -1,5 +1,5 @@
 package com.li.dao;
 
-public interface IUser {
+public interface IUserDao {
 	 public String get();  
 }
