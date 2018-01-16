@@ -1,0 +1,6 @@
+1.参照http://blog.csdn.net/lishehe/article/details/38355757
+搭建 spring+springMVC集成(annotation方式)
+2.可以只有一个springmvc.xml配置文件
+3.controller类直接访问daoimpl的话 daoimpl类上需加@Service注解
+4.<context-param>和listener是配套使用的 
+5.成功运行后，照着博客再搭建一遍 既然是可以的。真是奇葩。

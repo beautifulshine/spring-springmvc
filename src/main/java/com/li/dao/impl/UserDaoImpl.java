@@ -1,8 +1,10 @@
 package com.li.dao.impl;
 
 
-import com.li.dao.IUserDao;
+import org.springframework.stereotype.Service;
 
+import com.li.dao.IUserDao;
+@Service
 public class UserDaoImpl implements IUserDao{
 
 	public String get() {

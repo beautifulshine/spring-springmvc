@@ -1,23 +1,26 @@
 package com.li.controller;
 
-import javax.annotation.Resource;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.li.dao.IUserDao;
+
 
 @Controller
 public class SpringController {
-	//这样代替了再xml中配置属性的过程  
-    @Resource(name="userManager")  
-    private IUserDao springManager;//注入springManager  
-      
-      
+ @Autowired
+ private com.li.dao.impl.UserDaoImpl UserDaoImpl ;
 	
     @RequestMapping("/spring/get")  
     public String get(){
-        System.out.println(springManager.get());  
+        System.out.println(UserDaoImpl.get());  
+        return "success";  
+    }  
+    
+    @RequestMapping("/user")  
+    public String get2(){
+        
         return "success";  
     }  
 }

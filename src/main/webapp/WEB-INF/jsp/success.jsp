@@ -7,6 +7,6 @@
 <title>springmvc+spring测试成功</title>
 </head>
 <body>
-
+word
 </body>
 </html>
